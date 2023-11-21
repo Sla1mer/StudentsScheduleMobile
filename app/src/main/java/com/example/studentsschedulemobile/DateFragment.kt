@@ -93,9 +93,6 @@ class DateFragment : Fragment() {
         currentDate = LocalDate.parse(dateArgument)
         val scheduleArgument = arguments?.getSerializable(ARG_LIST)
         listSchedule = (scheduleArgument as? List<ScheduleDay>) ?: emptyList()
-
-        // Здесь вы должны получить массив ScheduleDay, например, с использованием вашего репозитория
-        // listSchedule = repository.getScheduleForDate(currentDate.toString())
     }
 
     fun getRussianDayOfWeek(localDate: LocalDate): String {

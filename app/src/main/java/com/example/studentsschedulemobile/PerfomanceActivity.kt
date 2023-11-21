@@ -1,20 +1,30 @@
 package com.example.studentsschedulemobile
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ArrayAdapter
+import android.widget.Button
 import android.widget.ListView
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.*
 
 class PerfomanceActivity : AppCompatActivity() {
     private lateinit var listView: ListView
+    private lateinit var toMainActivityBtn: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_perfomance)
 
         listView = findViewById(R.id.listView3)
+
+        toMainActivityBtn = findViewById(R.id.toMainActivityBtn)
+
+        toMainActivityBtn.setOnClickListener {
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
+        }
 
         val databaseReference: DatabaseReference = FirebaseDatabase.getInstance("https://studentssheduledb-default-rtdb.europe-west1.firebasedatabase.app/").reference
         val user = FirebaseAuth.getInstance().currentUser
