@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "552848892440",
+    "project_id": "studentssheduledb",
+    "storage_bucket": "studentssheduledb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:552848892440:android:19b4e592a1d0aec9c6196d",
+        "android_client_info": {
+          "package_name": "com.example.studentsschedulemobile"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD9ASbMoXahrc5PqN8ccrdGWAievG8PMi4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
